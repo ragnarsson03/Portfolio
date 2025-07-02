@@ -6,125 +6,125 @@ From content layers to server islands, click to learn more about the new feature
 </p> </a> </div>   <script type="module">const e=localStorage.getItem("darkMode")==="true"||window.matchMedia("(prefers-color-scheme: dark)").matches;e&&document.documentElement.classList.add("dark");</script> </body> </html>   <html lang="es" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg"><meta name="generator" content="Astro v5.10.2"><title>Frederick Durán | Desarrollador Web</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head> <body data-astro-cid-sckkx6r4>  <main class="min-h-screen"> <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-6"> <div class="container mx-auto px-4"> <div class="flex justify-between items-center"> <a href="#" class="text-2xl font-bold text-white">
 Frederick Durán
 </a> <div class="hidden md:flex items-center space-x-8"> <div class="flex space-x-6"> <a href="#" class="text-gray-200 hover:text-blue-500 transition-colors">Inicio</a> <a href="#sobre-mi" class="text-gray-200 hover:text-blue-500 transition-colors">Sobre Mí</a> <a href="#habilidades" class="text-gray-200 hover:text-blue-500 transition-colors">Habilidades</a> <a href="#proyectos" class="text-gray-200 hover:text-blue-500 transition-colors">Proyectos</a> <a href="#contacto" class="text-gray-200 hover:text-blue-500 transition-colors">Contacto</a> </div> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="2xzL" prefix="r2" component-url="/Portfolio/_astro/ThemeToggle.BnCcswdZ.js" component-export="default" renderer-url="/Portfolio/_astro/client.BPIbHqJh.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Cambiar tema"><div style="transition:transform 0.5s;transform:rotate(0deg)"><svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg></div></button><!--astro:end--></astro-island> </div> <!-- Botón de menú móvil --> <div class="md:hidden flex items-center"> <astro-island uid="2xzL" prefix="r3" component-url="/Portfolio/_astro/ThemeToggle.BnCcswdZ.js" component-export="default" renderer-url="/Portfolio/_astro/client.BPIbHqJh.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;ThemeToggle&quot;,&quot;value&quot;:true}" await-children><button class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Cambiar tema"><div style="transition:transform 0.5s;transform:rotate(0deg)"><svg class="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg></div></button><!--astro:end--></astro-island> <button id="mobile-menu-button" class="ml-4 text-white focus:outline-none"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path> </svg> </button> </div> </div> <!-- Menú móvil --> <div id="mobile-menu" class="md:hidden hidden mt-4 bg-gray-900 rounded-lg p-4"> <div class="flex flex-col space-y-4"> <a href="#" class="text-gray-200 hover:text-blue-500 transition-colors">Inicio</a> <a href="#sobre-mi" class="text-gray-200 hover:text-blue-500 transition-colors">Sobre Mí</a> <a href="#habilidades" class="text-gray-200 hover:text-blue-500 transition-colors">Habilidades</a> <a href="#proyectos" class="text-gray-200 hover:text-blue-500 transition-colors">Proyectos</a> <a href="#contacto" class="text-gray-200 hover:text-blue-500 transition-colors">Contacto</a> </div> </div> </div> </nav> <script type="module">const e=document.getElementById("navbar"),n=document.getElementById("mobile-menu-button"),s=document.getElementById("mobile-menu");function t(){window.scrollY>50?(e.classList.add("bg-white","dark:bg-gray-900","shadow-lg","py-3"),e.classList.remove("py-6","bg-transparent")):(e.classList.remove("bg-white","dark:bg-gray-900","shadow-lg","py-3"),e.classList.add("py-6","bg-transparent"))}function l(){s.classList.toggle("hidden")}window.addEventListener("scroll",t);n.addEventListener("click",l);t();</script> <section class="relative h-screen flex items-center justify-center overflow-hidden" id="inicio" data-astro-cid-bbe6dxrz> <!-- Fondo con gradiente --> <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900" data-astro-cid-bbe6dxrz> <!-- Overlay con patrón sutil --> <div class="absolute inset-0 opacity-10" style="background-image: url('/Portfolio/img/pattern.svg'); background-size: 50px;" data-astro-cid-bbe6dxrz></div> </div> <!-- Partículas o elementos decorativos (generados con CSS) --> <div class="absolute inset-0" data-astro-cid-bbe6dxrz> <div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 33.91839735193554%;
-          left: 79.26264215686136%;
-          width: 99.09591599624326px;
-          height: 95.39909787307263px;
-          animation: float 14.28045082338204s infinite ease-in-out;
+          top: 28.42814260473938%;
+          left: 61.13089605156852%;
+          width: 27.534692061302483px;
+          height: 39.70054792944116px;
+          animation: float 13.310316156593025s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 55.68505684428071%;
-          left: 9.846520152664207%;
-          width: 28.265453696426594px;
-          height: 59.191095916903976px;
-          animation: float 13.483234831785262s infinite ease-in-out;
+          top: 53.585612028360565%;
+          left: 85.3325966688074%;
+          width: 27.825818999638123px;
+          height: 23.378245554398653px;
+          animation: float 12.700126588803178s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 22.025060891924486%;
-          left: 8.494966708269725%;
-          width: 31.605908741148884px;
-          height: 112.84855004961176px;
-          animation: float 13.603399601860302s infinite ease-in-out;
+          top: 75.65674242000206%;
+          left: 92.83772004337796%;
+          width: 50.67223292328776px;
+          height: 90.70602281870444px;
+          animation: float 15.666806002068071s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 89.42170540780474%;
-          left: 76.2955246269494%;
-          width: 86.72446194188002px;
-          height: 52.72379908092478px;
-          animation: float 10.535316414335945s infinite ease-in-out;
+          top: 45.02479244610844%;
+          left: 49.935550872619984%;
+          width: 116.96155733800975px;
+          height: 108.56752390686738px;
+          animation: float 13.677429280493158s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 55.83629386984583%;
-          left: 15.242476959598505%;
-          width: 97.85389939009573px;
-          height: 68.62861168627768px;
-          animation: float 12.092445560888015s infinite ease-in-out;
+          top: 18.449432572493563%;
+          left: 5.2530227428674525%;
+          width: 97.93657657694636px;
+          height: 73.72044162072808px;
+          animation: float 19.910550954361312s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 86.1193607377984%;
-          left: 43.43956144636818%;
-          width: 43.78758860988093px;
-          height: 45.09663197827181px;
-          animation: float 15.28426525934156s infinite ease-in-out;
+          top: 10.184984567079237%;
+          left: 34.25544128236526%;
+          width: 85.626786911614px;
+          height: 27.45004325336005px;
+          animation: float 18.44441579302507s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 70.43171465482108%;
-          left: 41.2329954340237%;
-          width: 89.8665909054387px;
-          height: 114.26894383537226px;
-          animation: float 16.67424787453716s infinite ease-in-out;
+          top: 51.10407219850836%;
+          left: 14.071065140060979%;
+          width: 72.46704968277618px;
+          height: 43.9156082003934px;
+          animation: float 19.05061407414653s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 48.09587153876021%;
-          left: 54.87312513970137%;
-          width: 58.36185435885848px;
-          height: 93.06315103917882px;
-          animation: float 19.605440110174428s infinite ease-in-out;
+          top: 8.093390529978262%;
+          left: 80.42558724587312%;
+          width: 43.421965664259915px;
+          height: 36.55211282369109px;
+          animation: float 16.68514338572207s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 26.045752142433987%;
-          left: 15.962810795161019%;
-          width: 53.37604100840708px;
-          height: 72.19621622004556px;
-          animation: float 17.81543147279563s infinite ease-in-out;
+          top: 98.32761859505202%;
+          left: 32.948601469462325%;
+          width: 58.33230500166316px;
+          height: 56.32023830478515px;
+          animation: float 15.856560073847517s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 80.97261799383104%;
-          left: 81.76002730593011%;
-          width: 67.4078237154622px;
-          height: 30.029431513936448px;
-          animation: float 18.823933010378717s infinite ease-in-out;
+          top: 73.4363370997029%;
+          left: 49.02052075716497%;
+          width: 45.614148707828164px;
+          height: 44.136019534092455px;
+          animation: float 16.950878183954387s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 59.26201865039262%;
-          left: 37.60038717018899%;
-          width: 101.23754523759557px;
-          height: 46.421438720312835px;
-          animation: float 12.792757503530083s infinite ease-in-out;
+          top: 67.04973166879296%;
+          left: 78.96560209084711%;
+          width: 64.45971326540332px;
+          height: 46.785242529581126px;
+          animation: float 16.63337422797712s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 82.83545751221024%;
-          left: 49.13526692991353%;
-          width: 80.23950818644641px;
-          height: 111.16811820355967px;
-          animation: float 15.584794272105572s infinite ease-in-out;
+          top: 20.140372161181077%;
+          left: 47.87185046921847%;
+          width: 42.325938201873896px;
+          height: 41.90546373478386px;
+          animation: float 12.823627337286045s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 26.69650482940844%;
-          left: 95.79197464428013%;
-          width: 50.83729742142458px;
-          height: 101.41969943623523px;
-          animation: float 13.05682041158121s infinite ease-in-out;
+          top: 85.68830094437561%;
+          left: 81.29549338661587%;
+          width: 49.962578786441995px;
+          height: 25.825645581397087px;
+          animation: float 12.568377273230205s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 61.42907158582349%;
-          left: 62.71290125021869%;
-          width: 86.54108276451112px;
-          height: 22.612209901450456px;
-          animation: float 14.485562882099355s infinite ease-in-out;
+          top: 92.82736343057812%;
+          left: 83.17900265450342%;
+          width: 80.03086124522412px;
+          height: 22.893010258085592px;
+          animation: float 13.797781467206482s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 40.96362724207248%;
-          left: 25.827709962145317%;
-          width: 39.65378637319601px;
-          height: 59.35034372600548px;
-          animation: float 19.80974993577406s infinite ease-in-out;
+          top: 57.55605646573492%;
+          left: 23.660335642623377%;
+          width: 38.52208975161787px;
+          height: 115.1515421471645px;
+          animation: float 18.16860920694144s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 8.610243051778044%;
-          left: 69.31742859747656%;
-          width: 97.2300050965377px;
-          height: 70.76414296388077px;
-          animation: float 12.237340794076616s infinite ease-in-out;
+          top: 94.17943747579403%;
+          left: 55.75760224492032%;
+          width: 92.04166389003923px;
+          height: 101.29649044969393px;
+          animation: float 16.69709892480354s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 84.59219188596414%;
-          left: 82.08565953740144%;
-          width: 51.646267868616064px;
-          height: 57.6783238411964px;
-          animation: float 17.43050999619078s infinite ease-in-out;
+          top: 5.312150295696383%;
+          left: 62.34829693412565%;
+          width: 110.2159864531209px;
+          height: 57.95215004484484px;
+          animation: float 10.73121736473638s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 36.50191441370283%;
-          left: 4.68972843527129%;
-          width: 30.3980576588135px;
-          height: 102.04612455278489px;
-          animation: float 10.396493387849466s infinite ease-in-out;
+          top: 37.65138480580883%;
+          left: 25.437655475575195%;
+          width: 106.50792818664361px;
+          height: 34.809724386392205px;
+          animation: float 18.499910985212757s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 9.656152156804577%;
-          left: 74.15403943953866%;
-          width: 116.70511870593748px;
-          height: 61.69492875083209px;
-          animation: float 15.31184089760205s infinite ease-in-out;
+          top: 96.27000140086122%;
+          left: 78.2830465375826%;
+          width: 88.06762890569456px;
+          height: 59.246368518784756px;
+          animation: float 19.42151931596458s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div><div class="absolute rounded-full bg-blue-500 opacity-10 particle" style="
-          top: 82.70713384192344%;
-          left: 71.41551834423126%;
-          width: 87.19436391365483px;
-          height: 23.275574124565985px;
-          animation: float 15.969136043747197s infinite ease-in-out;
+          top: 59.47293103822271%;
+          left: 92.3579277993596%;
+          width: 108.41640457816742px;
+          height: 114.02726881718377px;
+          animation: float 16.20183533132991s infinite ease-in-out;
         " data-astro-cid-bbe6dxrz></div> </div> <!-- Contenido principal --> <div class="container mx-auto px-4 z-10 text-center" data-astro-cid-bbe6dxrz> <div class="max-w-3xl mx-auto" data-astro-cid-bbe6dxrz> <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight" data-astro-cid-bbe6dxrz>
 Hola, soy <span class="text-blue-400" data-astro-cid-bbe6dxrz>Frederick Durán</span> </h1> <p class="text-xl md:text-2xl text-gray-300 mb-8" data-astro-cid-bbe6dxrz>
 Desarrollador Web con experiencia en PHP, JavaScript y bases de datos.
