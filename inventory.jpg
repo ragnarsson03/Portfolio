@@ -1,0 +1,6 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1F2937"/>
+  <text x="400" y="300" font-family="Arial" font-size="32" fill="white" text-anchor="middle">Inventory Management System</text>
+  <rect x="250" y="350" width="300" height="100" rx="10" fill="#10B981"/>
+  <text x="400" y="410" font-family="Arial" font-size="24" fill="white" text-anchor="middle">PHP + PostgreSQL</text>
+</svg>

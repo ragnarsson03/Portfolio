@@ -1,0 +1,1 @@
+function a(t,s){t.forEach(e=>{e.isIntersecting&&(e.target.classList.remove("opacity-0"),e.target.classList.remove("-translate-x-8"),e.target.classList.remove("translate-x-8"),e.target.classList.remove("translate-y-4"),s.unobserve(e.target))})}const o={threshold:.1},r=new IntersectionObserver(a,o);document.querySelectorAll("[data-animation]").forEach(t=>{r.observe(t)});
