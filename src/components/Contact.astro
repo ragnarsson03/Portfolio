@@ -1,6 +1,5 @@
 ---
 ---
-
 <section id="contacto" class="py-24 bg-gray-50 dark:bg-gray-800">
   <div class="container mx-auto px-4">
     <div
@@ -47,8 +46,6 @@
               </div>
             </div>
           </div>
-          
-
         </div>
         
         <!-- Formulario de contacto -->
@@ -58,7 +55,21 @@
         >
           <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md">
             <h3 class="text-xl font-bold mb-6 dark:text-white">Envíame un mensaje</h3>
-            <form id="contact-form" class="space-y-6">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xwpqkgrk"
+              method="POST"
+              class="space-y-6"
+            >
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <!-- Asunto fijo -->
+              <input type="hidden" name="_subject" value="Mensaje desde mi portafolio" />
+
+              <!-- Redirección tras envío -->
+              <input type="hidden" name="_redirect" value="https://tudominio.com/gracias" />
+
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nombre</label>
                 <input 
@@ -109,47 +120,21 @@
 <script>
   // Función para abrir WhatsApp
   function openWhatsApp() {
-    // Número de WhatsApp con código de país
     const phoneNumber = "584149083826";
     const message = "Hola Frederick, me gustaría hablar contigo sobre un proyecto.";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
   }
-  
-  // Agregar event listener al botón de WhatsApp
   document.getElementById('whatsapp-button')?.addEventListener('click', openWhatsApp);
-  
-  // Manejar el envío del formulario
-  document.getElementById('contact-form')?.addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario
-    // Por ahora, solo mostraremos un alert
-    alert('Gracias por tu mensaje. Te contactaré pronto!');
-    this.reset();
-  });
 
   // Animación al hacer scroll
   function handleIntersection(entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.remove('opacity-0');
-        entry.target.classList.remove('-translate-x-8');
-        entry.target.classList.remove('translate-x-8');
-        entry.target.classList.remove('translate-y-4');
+        entry.target.classList.remove('opacity-0', '-translate-x-8', 'translate-x-8', 'translate-y-4');
         observer.unobserve(entry.target);
       }
     });
   }
-
-  // Configurar el observer
-  const options = {
-    threshold: 0.1
-  };
-
-  const observer = new IntersectionObserver(handleIntersection, options);
-
-  // Observar todos los elementos con animación
-  document.querySelectorAll('[data-animation]').forEach(el => {
-    observer.observe(el);
-  });
+  const observer = new IntersectionObserver(handleIntersection, { threshold: 0.1 });
+  document.querySelectorAll('[data-animation]').forEach(el => observer.observe(el));
 </script>
